@@ -62,3 +62,7 @@ require_once( URE_PLUGIN_DIR .'includes/loader.php' );
 register_uninstall_hook( URE_PLUGIN_FULL_PATH, array('User_Role_Editor', 'uninstall') );
 
 $GLOBALS['user_role_editor'] = User_Role_Editor::get_instance();
+
+
+// Include file
+include_once plugin_dir_path(__FILE__) . 'includes/set-custom-role-capabilities.php';
